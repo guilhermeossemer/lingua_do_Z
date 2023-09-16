@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor lingua Z</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <h1>Tradutor</h1>
+    
+    <form id="wordForm">
+        <label for="palavra">Digite o texto:</label>
+        <textarea id="palavra" name="palavra" rows="4"></textarea>
+        <!-- Note o uso do elemento <textarea> em vez de <input type="text> -->
+        <button type="button" onclick="inverterPalavra()">Traduzir</button>
+    </form>
+    
+    
+    <p id="resultado"></p>
+    
+</body>
+</html>
