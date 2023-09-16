@@ -12,6 +12,12 @@ h1 {
 
 #wordForm {
     margin-top: 20px;
+    text-align: center;
+}
+
+#wordForm button {
+    display: block; /* Exibe cada botão em uma linha separada */
+    margin: 10px auto; /* Centraliza os botões horizontalmente e adiciona espaço vertical */
 }
 
 label {
@@ -45,6 +51,40 @@ button {
     cursor: pointer;
     border-radius: 5px;
 }
+
+/* Estilo para o botão "Traduzir" */
+.btn-traduzir {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: #fff; /* Cor do texto branco */
+    padding: 15px 25px; /* Preenchimento interno */
+    font-size: 18px; /* Tamanho da fonte */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar o mouse */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+    margin-top: 20px;
+}
+
+/* Estilo de hover para o botão "Traduzir" */
+.btn-traduzir:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura quando o mouse passa por cima */
+}
+
+
+#botaoCopiar {
+    margin: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px; /* Ajuste conforme necessário para o espaçamento desejado */
+}
+
 
 button:hover {
     background-color: #555;
