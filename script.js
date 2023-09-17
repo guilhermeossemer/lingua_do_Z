@@ -66,3 +66,22 @@ function colarTexto() {
         console.error('Erro ao colar texto: ', err);
     });
 }
+// Função para falar o texto traduzido
+function ouvirTexto() {
+    const palavraInvertida = document.getElementById('resultado').textContent;
+
+    // Verifica se a API de fala está disponível no navegador
+    if ('speechSynthesis' in window) {
+        const synthesis = window.speechSynthesis;
+        const utterance = new SpeechSynthesisUtterance(palavraInvertida);
+
+        // Define a voz que será usada (opcional)
+        // const voices = synthesis.getVoices();
+        // utterance.voice = voices[0]; // Altere o índice para a voz desejada
+
+        synthesis.speak(utterance);
+    } else {
+        alert('A API de fala não é suportada neste navegador.');
+    }
+}
+
